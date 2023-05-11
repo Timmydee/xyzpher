@@ -1,0 +1,109 @@
+.purpose__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    margin: 2rem 0;
+    
+    .purpose__desc{
+        .purpose__title{
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            .purpose__img{
+                display: flex;    
+                .img1{
+                    position: relative;
+                    // transform: rotate(360);
+                    animation: rotate360 3s linear infinite;
+                }
+                .img2{
+                    position: absolute;
+                    // transform: rotate(360);
+                    animation: rotate0 3s linear infinite;
+                }
+            }
+        }
+        p{
+            width: 361px;
+            text-align: justify;
+        }
+
+        @keyframes rotate360 {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(100deg);
+            }
+        }
+        @keyframes rotate0 {
+            0%{
+                transform: rotate(360deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+    }
+
+
+    .purpose__banner {
+        position: relative;
+        .banner1__submission {
+          width: 700px;
+          height: 210px;
+          border-radius: 268px;
+          border: 1.2rem solid #C7B5A6;
+          background-color: black;
+          position: relative;
+          z-index: 2;
+      
+          .banner2__submission {
+            background: #2B2D33;
+            width: 300px;
+            max-height: 100%;
+            height: 140px;
+            margin: 2rem auto;
+            padding: 1rem 1rem;
+            // border: 1px solid green;
+            z-index: -1;
+            overflow-y: hidden;
+            scrollbar-width: thin; 
+            scrollbar-color: transparent transparent;
+      
+            .banner3__sec{
+                width: 100%;
+                max-height: 100%;
+                display: flex;
+                
+                justify-content: space-between;
+                
+            }
+
+            .banner3__sec2{
+                padding: 5px 0 3px;
+            }
+
+          }
+        }
+
+        @media (max-width:800px) {
+            .banner1__submission{
+                width: 350px;
+                height: 120px;
+                // border-radius: 120px;
+                border: 0.5rem solid #C7B5A6;
+                .banner2__submission{
+                    width: 250px;
+                    height: 90px;
+                    margin: 0.9rem auto;
+                    padding: 0.5rem;
+                }
+            }
+            
+        }
+    }
+      
+
+}

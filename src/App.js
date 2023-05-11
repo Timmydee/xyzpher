@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.scss'
+import Navbar from './component/Navbar/Navbar'
+import Hero from './component/Hero/Hero'
+import Scroll from './container/Scroll/Scroll'
+import Work from './container/Work/Work'
+import Purpose from './container/Purpose/Purpose'
+import LoadingSpinner from './container/LoadingSpinner/LoadingSpinner'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <div className='app__container'>
+        <Navbar />
+        <Hero />
+        {/* <Scroll /> */}
+        <div className='work__app'>
+          <Work />
+          <Purpose />
+        </div>
+        
+      </div>
     </div>
-  );
+    
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,167 @@
+.app {
+  // height: 100vh;
+  font-family: var(--font-base);
+  overflow: hidden;
+  display: flex;
+  // position: relative;
+  // background: rgba(253, 89, 89, 0.72);
+  // background-color: white;
+  
+  // filter: blur(265.5px);
+  // background: linear-gradient(
+  //   360deg,
+  //   rgba(191, 89, 253, 0.42) 5%,
+  //   rgba(220, 253, 89, 0.42) 10%,
+  //   rgba(253, 89, 89, 0.72) 100%,
+
+  // );
+  // filter: blur(256px);
+}
+
+.whitebg {
+  background-color: var(--white-color);
+}
+
+.app__container{
+  width: 100%;
+  // min-height: 100vh;
+  background: linear-gradient(to right, #6E4C4A, rgba(46, 33, 32, 1) 50%, #6E4C4A);
+
+
+}
+
+.app__container:hover {
+  // background: linear-gradient(to right, #9C674F, rgba(128, 97, 95, 1) 50%, #9C674F);
+}
+
+.app__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work__app{
+  position: relative;
+}
+
+.h_text{
+  font-size: 71px;
+  font-weight: 800;
+  color: var(--white-color);
+  text-transform: capitalize;
+
+  span{
+    color: var(--secondary-color);
+  }
+
+  @media screen and (min-width: 2000px) {
+    font-size: 4rem;
+  }
+
+  @media screen and (max-width: 1200px) {
+    font-size: 3.5rem;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 1.7rem;
+  }
+}
+
+.sub-text{
+  font-size: 2.6rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--white-color);
+
+  span{
+    color: var(--secondary-color);
+  }
+
+  @media screen and (min-width: 2000px) {
+    font-size: 3rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 1.5rem;
+  }
+}
+
+.p_text{
+  font-size: 16px;
+  color: var(--white-color);
+  line-height: 1.5;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 16px;
+  }
+}
+
+.pSub-text{
+  font-size: 1rem;
+  color: var(--white-color);
+  line-height: 1.5;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 1.75rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 0.8rem;
+  }
+
+}
+
+.bold-text{
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--secondary-color);
+
+  @media screen and (min-width: 2000px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 1.75rem;
+  }
+}
+
+.mid-text{
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--secondary-color);
+
+  @media screen and (min-width: 2000px) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 1.2rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  // font-size: 1.5rem;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.btn{
+  // padding: 15px 34px;
+  margin: 0 auto;
+  height: 56px;
+  width: 158px;
+  border-radius: 40px;
+  background-color: var(--secondary-color);
+  border: none;
+  cursor: pointer;
+  // margin: 0 auto;
+}
+
+.btn:hover {
+  box-shadow: rgb(0 0 0/ 15%) 0px 8px 24px ;
+}

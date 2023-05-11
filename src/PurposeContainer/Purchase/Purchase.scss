@@ -1,0 +1,91 @@
+.purchase__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    margin: 2rem 0;
+    
+    .purpose__desc{
+        .purpose__title{
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            
+            .purpose__img{
+                display: flex;    
+                .img1{
+                    position: relative;
+                    // transform: rotate(360);
+                    animation: rotate360 3s linear infinite;
+                }
+                .img2{
+                    position: absolute;
+                    // transform: rotate(360);
+                    animation: rotate0 3s linear infinite;
+                }
+            }
+        }
+        p{
+            width: 361px;
+            text-align: justify;
+        }
+
+        @keyframes rotate360 {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(100deg);
+            }
+        }
+        @keyframes rotate0 {
+            0%{
+                transform: rotate(360deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+    }
+
+
+    .purchase{
+        .banner__purchase{
+          position: relative;
+          width: 700px;
+          height: 210px;
+          border-radius: 268px;
+          background-color: #9D7CAC;
+          display: flex;
+          align-items: center;
+          justify-items: center;
+      
+          .banner2__purchase {
+            width: 70%;
+            margin: 0 auto;
+            height: 20px;
+            background-color: #000000;
+            border-radius: 40px;
+      
+            p {
+                color: var(--secondary-color);
+                text-align: center;
+              }
+          }
+        }
+    }
+
+    @media (max-width:800px) {
+        flex-direction: column-reverse;
+        gap: 3rem;
+        .purchase{
+            .banner__purchase{
+                width: 350px;
+                height: 120px;
+                border-radius: 120px;                 
+            }
+        }
+    }
+      
+
+}

@@ -1,0 +1,17 @@
+.purpose{
+    width: 100%;
+    background-color: #202021;
+    // background: transparent;
+    position: relative;
+}
+.purpose__col{
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem 0;
+    color: #ffffff;
+
+    @media (max-width:800px) {
+        margin: 0 auto;
+        padding: 0;
+    }
+}

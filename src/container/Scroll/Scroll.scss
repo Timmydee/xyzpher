@@ -1,0 +1,64 @@
+
+
+.scroll-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // height: 400px;
+  overflow: hidden;
+  margin-top: 4rem;
+}
+
+.scroll-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  align-items: center;
+  animation: scroll-left 20s linear infinite;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  
+  .scroll-item {
+    // width: fit-content;
+    // height: fit-content;
+    width: 194px;
+    height: 46px;
+    font-size: 16px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem;
+    border-radius: 40px;
+    line-height: 1;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.scroll-row:nth-child(2) {
+  animation-name: scroll-right;
+  animation-delay: 0s;
+  margin-top: 1rem;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+  101% {
+    transform: translateX(0%);
+  }
+}
