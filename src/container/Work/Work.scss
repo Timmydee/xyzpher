@@ -5,7 +5,9 @@
   margin: 2rem 0;
 
   @media (max-width:800px) {
-    height: 20vh;
+    height: 10vh;
+    margin: 2rem 0 0;
+    
   }
 }
 
@@ -21,14 +23,9 @@
     // background-color: #202021;
 
     .work__col{
-      color: #0c0c00;
-      font-family: var(--font-secondary);
       display: inline-block;
-      font-size: 300px;
-      font-weight: bold;
-      animation: scroll-left 10s linear infinite;
-  
-      
+      animation: scroll-left 10s linear infinite; 
+      width: 100%;    
     }
     
     @keyframes scroll-left {
@@ -43,7 +40,9 @@
     @media (max-width:800px) {
 
       .work__col{
-        font-size: 150px;
+        width: 100%;
+
+
       }
       
     }
