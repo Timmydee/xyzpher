@@ -59,7 +59,7 @@
             position: absolute;
             flex-direction: column;
             justify-content: start;
-            background: green;
+            background: var(--secondary-color);
             width: 70%;
             left: -100%;
             top: 0px;
@@ -68,6 +68,7 @@
             transition: 0.5s;
             padding: 2rem;
             border-left: 1px solid #eee;
+            color: black;
         }
         .nav-menu.active{
             left: 0%;
@@ -79,6 +80,10 @@
 
             li{
                 margin: 1rem 0;
+                
+                a{
+                    color: black;
+                }
             }
         }
 

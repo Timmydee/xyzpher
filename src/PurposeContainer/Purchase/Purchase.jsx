@@ -3,7 +3,7 @@ import polygon1 from '../../assets/polygon1.png'
 import polygon2 from '../../assets/polygon2.png'
 import './Purchase.scss'
 
-const GovernanceToken = () => {
+const Purchase = () => {
     const [rotation, setRotation] = useState(0);
 
     useEffect(() => {
@@ -53,4 +53,4 @@ const GovernanceToken = () => {
     )
 }
 
-export default GovernanceToken
+export default Purchase

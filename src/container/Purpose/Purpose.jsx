@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import GovernanceToken from '../../PurposeContainer/GovernanceToken/GovernanceToken';
 import Purchase from '../../PurposeContainer/Purchase/Purchase';
 import Submission from '../../PurposeContainer/Submission/Submission';
+import Voting from '../../PurposeContainer/Voting/Voting';
 
 
 const Purpose = () => {
@@ -16,6 +17,8 @@ const Purpose = () => {
             <GovernanceToken />
             <Purchase />
             <Submission />
+
+            <Voting />
 
             {/* 2 */}
         </div>
